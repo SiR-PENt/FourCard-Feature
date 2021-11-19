@@ -15,7 +15,7 @@
 .DS_Store
 
 
-/vscode
-/design
+.vscode
+design
 style-guide-md
-/dist/css/main.css.map
+dist/css/main.css.map
