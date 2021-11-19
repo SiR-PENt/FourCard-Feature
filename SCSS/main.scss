@@ -1,0 +1,195 @@
+@import "resets";
+@import "config";
+@import "mixins";
+@import "responsive";
+@import "theme";
+
+body {
+    display: grid;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: $primary-color;
+
+    header {
+        width: 80%;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+        justify-self: center;
+
+        p:nth-child(1) {
+            font-size: 28px;
+            font-weight: weights(custom);
+            color: $text-color-md;
+        }
+
+        p:nth-child(2) {
+            color: $text-color-sd;
+            font-size: 28px;
+            font-weight: weights(bold);
+            margin: 0;
+
+        }
+
+        p:nth-child(3) {
+            font-size: 15px;
+            color: $text-color-md;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.main {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 30px;
+}
+
+.supervisorC {
+    @include parent($supervisor);
+
+    .supervisor {
+        @include child;
+
+        &.theme {
+            @include child-theme($light-theme:true);
+        }
+
+        h1 {
+            @include child-header;
+        }
+
+        p {
+            @include child-p;
+        }
+
+        img {
+            @include child-img
+        }
+    }
+}
+
+.container-md {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.team-builderC {
+    @include parent($team-builder);
+
+    .team-builder {
+        @include child;
+
+        &.theme {
+            @include child-theme($light-theme:true);
+        }
+
+        h1 {
+            @include child-header;
+        }
+
+        p {
+            @include child-p;
+        }
+
+        img {
+            @include child-img;
+        }
+    }
+}
+
+.karmaC {
+    @include parent($karma);
+
+    .karma {
+        @include child;
+
+        &.theme {
+            @include child-theme($light-theme:true);
+        }
+
+        h1 {
+            @include child-header;
+        }
+
+        p {
+            @include child-p;
+        }
+
+        img {
+            @include child-img;
+        }
+    }
+}
+
+.calculatorC {
+    @include parent($calculator);
+
+    .calculator {
+        @include child;
+
+        &.theme {
+            @include child-theme($light-theme:true);
+        }
+
+        h1 {
+            @include child-header;
+        }
+
+        p {
+            @include child-p;
+        }
+
+        img {
+            @include child-img;
+        }
+    }
+}
+
+.switch-btn {
+    position: fixed;
+    top: 2%;
+    right: 7%;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.switch-btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    // color: var(--clr-primary-5);
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $text-color-md;
+    border-radius:45px;
+    margin: 0;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.light {
+    @include theme($light-theme:true);
+}
+
+.c-theme {
+    @include parent-theme($light-theme:true);
+}
+
+.slide .switch {
+    left: 50%;
+}

@@ -1,0 +1,39 @@
+// container colors
+$team-builder: hsl(0, 78%, 62%);
+$supervisor: hsl(180, 62%, 55%);
+$karma: hsl(34, 97%, 64%);
+$calculator: hsl(212, 86%, 64%);
+
+// typography
+$text-color-sd: hsl(234, 12%, 34%);
+$text-color-md:hsl(229, 6%, 66%);
+$text-color-wk:hsl(0, 0%, 98%);
+$primary-color:white;
+$font-size:15px;
+
+$font-weights: ("regular": 200,
+    "medium":400,
+    "bold":600,
+    "custom":100);
+
+@function weights($font-weight) {
+    @return map-get($font-weights, $font-weight)
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}

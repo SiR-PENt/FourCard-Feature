@@ -1,0 +1,35 @@
+@mixin parent($bg-color) {
+    background: $bg-color;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 0px 20px 80px -8px $text-color-md;
+}
+
+@mixin child {
+    background:$primary-color;
+    font-weight: weights(bold);
+    position: relative;
+    top: 3px;
+    height: inherit;
+    padding: 20px;
+    border-radius:0px 0px 10px 10px;
+}
+
+@mixin child-header {
+    font-weight: weights(bold);
+    color: $text-color-sd;
+    font-size: 25px;
+}
+
+@mixin child-img {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+}
+
+@mixin child-p {
+    margin-top: 10px;
+    color: $text-color-md;
+    line-height: 1.5;
+}
+

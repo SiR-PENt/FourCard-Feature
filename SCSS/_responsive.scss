@@ -1,0 +1,21 @@
+@include media-lg {
+  body {
+    display: grid;
+    justify-items: center;
+  }
+
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0 50px;
+  }
+
+  header {
+    width: 60%;
+    p:nth-child(3) {
+      width: 60%;
+      line-height: 1.5;
+    }
+  }
+}
