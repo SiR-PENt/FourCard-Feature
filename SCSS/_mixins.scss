@@ -6,13 +6,13 @@
 }
 
 @mixin child {
-    background:$primary-color;
+    background: $primary-color;
     font-weight: weights(bold);
     position: relative;
     top: 3px;
     height: inherit;
     padding: 20px;
-    border-radius:0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 @mixin child-header {
@@ -33,3 +33,22 @@
     line-height: 1.5;
 }
 
+
+// theme mixins
+@mixin theme($light-theme:true) {
+    @if $light-theme {
+        background-color: darken($primary-color, 90%);
+    }
+}
+
+@mixin parent-theme($light-theme:true) {
+    @if $light-theme {
+        box-shadow: 0px 20px 80px -8px darken($text-color-md, 90%);
+    }
+}
+
+@mixin child-theme($light-theme:true) {
+    @if $light-theme {
+        background: darken($primary-color, 90%);
+    }
+}
