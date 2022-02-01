@@ -2,13 +2,14 @@
 @import "config";
 @import "mixins";
 @import "responsive";
-@import "theme";
+
 
 body {
     display: grid;
     padding: 50px 20px;
     font-family: 'Poppins', sans-serif;
     background-color: $primary-color;
+    transition: all 0.3s linear;
 
     header {
         width: 80%;
@@ -19,7 +20,7 @@ body {
 
         p:nth-child(1) {
             font-size: 28px;
-            font-weight: weights(custom);
+            font-weight: weights(bold);
             color: $text-color-md;
         }
 
@@ -28,14 +29,13 @@ body {
             font-size: 28px;
             font-weight: weights(bold);
             margin: 0;
-
         }
 
         p:nth-child(3) {
             font-size: 15px;
-            color: $text-color-md;
-            margin-top: 20px;
+            color: $text-color-sd;
             text-align: center;
+            font-weight:weights(bold);
         }
     }
 }
@@ -45,13 +45,12 @@ body {
     display: grid;
     grid-gap: 30px;
 }
-
 .supervisorC {
     @include parent($supervisor);
-
+    
     .supervisor {
         @include child;
-
+        
         &.theme {
             @include child-theme($light-theme:true);
         }
@@ -176,7 +175,7 @@ body {
     top: 0;
     left: 0;
     background: $text-color-md;
-    border-radius:45px;
+    border-radius: 45px;
     margin: 0;
     display: block;
     transition: all 0.5s ease;

@@ -36,6 +36,8 @@ body {
   padding: 50px 20px;
   font-family: 'Poppins', sans-serif;
   background-color: white;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 body header {
@@ -63,8 +65,7 @@ body header p:nth-child(2) {
 
 body header p:nth-child(3) {
   font-size: 15px;
-  color: #a3a5ae;
-  margin-top: 20px;
+  color: #6e717c;
   text-align: center;
 }
 
@@ -81,6 +82,8 @@ body header p:nth-child(3) {
   height: 250px;
   -webkit-box-shadow: 0px 20px 80px -8px #a3a5ae;
           box-shadow: 0px 20px 80px -8px #a3a5ae;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .supervisorC .supervisor {
@@ -91,6 +94,8 @@ body header p:nth-child(3) {
   height: inherit;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .supervisorC .supervisor.theme {
@@ -127,6 +132,8 @@ body header p:nth-child(3) {
   height: 250px;
   -webkit-box-shadow: 0px 20px 80px -8px #a3a5ae;
           box-shadow: 0px 20px 80px -8px #a3a5ae;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .team-builderC .team-builder {
@@ -137,6 +144,8 @@ body header p:nth-child(3) {
   height: inherit;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .team-builderC .team-builder.theme {
@@ -167,6 +176,8 @@ body header p:nth-child(3) {
   height: 250px;
   -webkit-box-shadow: 0px 20px 80px -8px #a3a5ae;
           box-shadow: 0px 20px 80px -8px #a3a5ae;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .karmaC .karma {
@@ -177,6 +188,8 @@ body header p:nth-child(3) {
   height: inherit;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .karmaC .karma.theme {
@@ -207,6 +220,8 @@ body header p:nth-child(3) {
   height: 250px;
   -webkit-box-shadow: 0px 20px 80px -8px #a3a5ae;
           box-shadow: 0px 20px 80px -8px #a3a5ae;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .calculatorC .calculator {
@@ -217,6 +232,8 @@ body header p:nth-child(3) {
   height: inherit;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .calculatorC .calculator.theme {
